@@ -1,0 +1,43 @@
+/* ROOT */
+:root {
+    --primary: rgb(68, 148, 223);
+    --grey: rgb(229, 242, 247);
+    --header-color: #444;
+    --sub-color: #888;
+    --white-text: #fff;
+}
+
+/* GLOBAL */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+}
+
+.parent {
+    grid-template-columns: 25vw 75vw;
+    grid-template-rows: 15vh 85vh;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+}
+
+.sidebar.section {
+    grid-area: sidebar;
+    background-color: var(--primary);
+}
+
+.header.section {
+    grid-area: header;
+}
+
+.main.section {
+    grid-area: main;
+    background-color: var(--grey);
+}
