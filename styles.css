@@ -2,7 +2,7 @@
 :root {
     --primary: rgb(68, 148, 223);
     --grey: rgb(229, 242, 247);
-    --header-color: #444;
+    --header-color: #333;
     --sub-color: #888;
     --white-text: #fff;
 }
@@ -14,6 +14,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }
 
 .grid {
@@ -30,7 +35,7 @@
 }
 
 .parent {
-    grid-template-columns: 25vw 75vw;
+    grid-template-columns: 20vw 80vw;
     grid-template-rows: 15vh 85vh;
     grid-template-areas: 
         "sidebar header"
@@ -108,4 +113,57 @@
 .main.section {
     grid-area: main;
     background-color: var(--grey);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+    gap: 1rem;
+    padding: 0.5rem;
+}
+.projects.container {
+    grid-area: projects;
+}
+.announcements.container {
+    grid-area: announcements;
+}
+.trending.container {
+    grid-area: trending;
+}
+
+.half {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-title {
+    color: var(--header-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-box {
+    background-color: var(--white-text);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.content.announcement {
+    line-height: 100%;
+}
+
+.content.announcement > h6 {
+    font-size: 0.8rem;
+}
+
+.content.announcement > p {
+    font-size: 0.70rem;
+}
+
+.seperator {
+    margin: 0.5rem;
 }
