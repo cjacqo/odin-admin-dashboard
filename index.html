@@ -10,8 +10,44 @@
 </head>
 <body>
     <div class="parent grid">
-        <aside class="sidebar section"></aside>
-        <header class="header section"></header>
+        <aside class="sidebar section">
+            <div class="logo container">
+                <h3 class="logo-text">Dashboard</h3>
+            </div>
+            <nav class="nav container" id="navsGrid">
+                <ul class="nav-list container" id="topNav">
+                    <li class="nav-list item">Home</li>
+                    <li class="nav-list item">Home</li>
+                    <li class="nav-list item">Home</li>
+                    <li class="nav-list item">Home</li>
+                </ul>
+                <ul class="nav-list container" id="bottomNav">
+                    <li class="nav-list item">Settings</li>
+                    <li class="nav-list item">Support</li>
+                    <li class="nav-list item">Privacy</li>
+                </ul>
+            </nav>
+        </aside>
+        <header class="header section grid">
+            <div class="search-bar" id="searchCell">
+                <input type="text" class="search-input" id="searchInput">
+            </div>
+            <div class="alerts-bar" id="alertCell">
+                <h6>Morgan Oakley</h6>
+            </div>
+            <div class="greeting-bar" id="greetingCell">
+                <div class="user-icon">ICON</div>
+                <div class="user-greeting">
+                    <p>Hi there,</p>
+                    <h3>Morgan Oakley (@morgan)</h3>
+                </div>
+            </div>
+            <div class="actions-bar" id="actionsCell">
+                <button type="button" class="btn primary pointer" id="newBtn">New</button>
+                <button type="button" class="btn primary pointer" id="uploadBtn">Upload</button>
+                <button type="button" class="btn primary pointer" id="shareBtn">Share</button>
+            </div>
+        </header>
         <main class="main section"></main>
     </div>
 </body>

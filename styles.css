@@ -20,6 +20,15 @@
     display: grid;
 }
 
+.btn {
+    outline: none;
+    border: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
 .parent {
     grid-template-columns: 25vw 75vw;
     grid-template-rows: 15vh 85vh;
@@ -28,13 +37,72 @@
         "sidebar main";
 }
 
+/* -- navigation section */
 .sidebar.section {
     grid-area: sidebar;
     background-color: var(--primary);
+    color: var(--white-text);
 }
 
+/* -- header section */
 .header.section {
+    width: 95%;
+    margin: 0 auto;
     grid-area: header;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "search search alerts"
+        "greeting actions actions";
+}
+
+.header.section > * {
+    align-self: center;
+
+}
+
+.search-bar {
+    grid-area: search;
+
+}
+#searchInput {
+    background-color: var(--grey);
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 0.85rem;
+    padding: 0.5rem;
+}
+
+.alerts-bar {
+    grid-area: alerts;
+}
+
+.greeting-bar {
+    grid-area: greeting;
+    display: flex;
+}
+
+.actions-bar {
+    grid-area: actions;
+    display: flex;
+    gap: 10px;
+}
+.btn.primary {
+    flex: 1;
+    background-color: var(--primary);
+    color: var(--white-text);
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    transition: all 300ms ease-in-out;
+}
+.btn.primary:hover {
+    color: var(--primary);
+    outline: 3px solid var(--primary);
+    background-color: transparent;
+    transition: all 300ms ease-in-out;
 }
 
 .main.section {
