@@ -175,16 +175,20 @@ body {
         "projects announcements"
         "projects trending";
     gap: 1rem;
-    padding: 0.5rem;
+    padding: 0 0.5rem;
     overflow: hidden;
 }
 .projects.container {
+    margin: 1rem 0;
     grid-area: projects;
+    overflow: hidden;
 }
 .announcements.container {
+    margin: 1rem 0 0 0;
     grid-area: announcements;
 }
 .trending.container {
+    margin: 0 0 1rem 0;
     grid-area: trending;
 }
 
