@@ -66,9 +66,17 @@ body {
 
 }
 
+.search-bar,
+.alerts-bar,
+.greeting-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
 .search-bar {
     grid-area: search;
-
 }
 #searchInput {
     background-color: var(--grey);
@@ -83,10 +91,18 @@ body {
 .alerts-bar {
     grid-area: alerts;
 }
+.user-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: purple;
+}
 
 .greeting-bar {
     grid-area: greeting;
-    display: flex;
+}
+.user-greeting > p {
+    font-size: 0.70rem;
 }
 
 .actions-bar {
@@ -162,6 +178,21 @@ body {
 
 .content.announcement > p {
     font-size: 0.70rem;
+}
+
+.content.trend {
+    display: flex;
+    gap: 10px;
+}
+
+.trend-info > h6 {
+    color: var(--header-color);
+    font-size: 14px;
+}
+
+.trend-info > p {
+    color: var(--sub-color);
+    font-size: 0.8rem;
 }
 
 .seperator {

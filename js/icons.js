@@ -51,7 +51,5 @@ const icons = {
         {
             classNames: 'fa-solid fa-share-nodes'
         }
-    ],
-    search: 'fa-solid fa-magnifying-glass',
-    bell: 'fa-solid fa-bell'
+    ]
 }
