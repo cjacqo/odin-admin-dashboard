@@ -42,6 +42,13 @@ body {
         "sidebar main";
 }
 
+@media (min-width: 1150px) {
+    .parent {
+        grid-template-columns: 200px calc(100vw - 200px);
+
+    }
+}
+
 /* -- navigation section */
 .sidebar.section {
     grid-area: sidebar;
@@ -64,7 +71,7 @@ body {
     justify-content: flex-start;
 }
 .nav-list {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
