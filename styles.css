@@ -129,6 +129,7 @@ body {
 
 .alerts-bar {
     grid-area: alerts;
+    justify-content: flex-end;
 }
 .user-profile-pic {
     width: 40px;
@@ -168,7 +169,7 @@ body {
 .main.section {
     grid-area: main;
     background-color: var(--grey);
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 275px;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "projects announcements"
